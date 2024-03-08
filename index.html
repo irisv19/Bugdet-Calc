@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Calculator</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="calc.js"></script>
+</head>
+
+<body>
+    <section class="income_section">
+        <!-- Pie chart here -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+        <body>
+
+            <canvas id="myChart" style="width:100%;max-width:700px"></canvas>
+
+            <script>
+                var xValues = ["Household Items", "Savings", "Insurance", "Educational", "Personal & Entertainment", "Retirement", "Food", "Transportaion", "Housing", "Utilities", "Child Care"];
+                var yValues = [55, 19, 14, 24, 15, 6, 13, 23, 19, 21, 32,];
+                var barColors = [
+                    "#b91d47",
+                    "#00aba9",
+                    "#2b5797",
+                    "#e8c3b9",
+                    "#1e7145",
+                    "#40e0do",
+                    "#ccccff",
+                    "#dfff00",
+                    "#800080",
+                    "#808000",
+                    "#800000"
+                ];
+
+                // new Chart("myChart", {
+                //     type: "doughnut",
+                //     data: {
+                //         labels: xValues,
+                //         datasets: [{
+                //             backgroundColor: barColors,
+                //             data: yValues
+                //         }]
+                //     },
+                //     options: {
+                //         title: {
+                //             display: true,
+                //             text: "Total Expenses"
+                //         }
+                //     }
+                // });
+            </script>
+            <section class="income">
+                <section>
+                    <h2>Income</h2>
+                    <input class="text" placeholder="$45,964">
+                    <h2>Location</h2>
+                    <input class="text" placeholder="Fresno, CA">
+                    <h2>Adults</h2>
+                    <input class="text" placeholder="1">
+                    <h2>Children</h2>
+                    <input class="text" placeholder="2">
+                </section>
+            </section>
+
+    </section>
+    <section class="right">
+        <h1> Taxes </h1>
+        <section class="displace">
+            <section class="lineUp">
+                <section class="grossAnnualCont">
+                    <h2> Gross Annual Income </h2>
+                    <input class="text" placeholder="$">
+                </section>
+
+                <section class="grossMonthlyCont">
+                    <h2> Gross Monthly Income </h3>
+                        <p class="divBy12">(Divide Gross Annual Income divided by 12)</p>
+                        <input class="text" placeholder="$">
+                </section>
+
+            </section>
+
+            <section class="taxes">
+                <table>
+                    <tr>
+                        <td>Federal Taxes</td>
+                        <td>12%</td>
+                        <td><input class="text" placeholder="$"></td>
+                    </tr>
+                    <tr>
+                        <td>States Taxes</td>
+                        <td>7%</td>
+                        <td><input class="text" placeholder="$"></td>
+                    </tr>
+                    <tr>
+                        <td>Social Secuirty</td>
+                        <td>6.2</td>
+                        <td><input class="text" placeholder="$"></td>
+                    </tr>
+                    <tr>
+                        <td>Medicare</td>
+                        <td>1.45%</td>
+                        <td><input class="text" placeholder="$"></td>
+                    </tr>
+                    <tr>
+                        <td>State Disability</td>
+                        <td>1%</td>
+                        <td><input class="text" placeholder="$"></td>
+                    </tr>
+                    <tr>
+                        <td>Retirement Investment</td>
+                        <td>5%</td>
+                        <td><input class="text" placeholder="$"></td>
+                    </tr>
+                    <tr>
+                        <td>Medical Insurance</td>
+                        <td>--</td>
+                        <td><input class="text" placeholder="$"></td>
+                    </tr>
+                </table>
+            </section>
+
+            <!-- Not sure if done correctly -->
+            <!-- Make sure to put them side by side in CSS for easier use -->
+            <section class="monthly-income">
+                <section class="grossMI">
+                    <h2> Gross Monthly Income</h2>
+                    <input class="text" placeholder="$">
+                </section>
+                <section>
+                    <h2>-</h2>
+                </section>
+                <section class="totalD">
+                    <h2>Total deduction</h2>
+                    <input class="text" placeholder="$">
+                </section>
+                <section>
+                    <h2>=</h2>
+                </section>
+                <section class="netMI">
+                    <h2>Net Monthly Income</h2>
+                    <input class="text" placeholder="$">
+                </section>
+
+
+            </section>
+
+            <!--<td>Child Care</td> just replace all of the td tags with this so that it changes the color, unless there's a quicker way to do it -->
+
+            <section class="monthlyexpenses">
+                <table>
+                    <thead>
+                        <tr>
+                            <th> Monthly Expenses </th>
+                            <th> Local Benchmark </th>
+                            <th> Your Expenses </th>
+                            <th> Difference </th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td>Household Items</td>
+                        <td><input class="text" placeholder="$"></td>
+                        <td><input class="text" placeholder="$"></td>
+                        <td><input class="text" placeholder="$"></td>
+                    </tr>
+                    <tr>
+                        <td>Savings</td>
+                        <td><input class="text" placeholder="$"></td>
+                        <td><input class="text" placeholder="$"></td>
+                        <td><input class="text" placeholder="$"></td>
+                    </tr>
+                    <tr>
+                        <td>Insurance</td>
+                        <td><input class="text" placeholder="$"></td>
+                        <td><input class="text" placeholder="$"></td>
+                        <td><input class="text" placeholder="$"></td>
+                    </tr>
+                    <tr>
+                        <td>Educational</td>
+                        <td><input class="text" placeholder="$"></td>
+                        <td><input class="text" placeholder="$"></td>
+                        <td><input class="text" placeholder="$"></td>
+                    </tr>
+                    <tr>
+                        <td>Personal & Entertainment</td>
+                        <td><input class="text" placeholder="$"></td>
+                        <td><input class="text" placeholder="$"></td>
+                        <td><input class="text" placeholder="$"></td>
+                    </tr>
+                    <tr>
+                        <td>Retirement</td>
+
+                        <td><input class="text" placeholder="$"></td>
+                        <td><input class="text" placeholder="$"></td>
+                        <td><input class="text" placeholder="$"></td>
+                    </tr>
+                    <tr>
+                        <td>Food</td>
+                        <td><input class="text" placeholder="$"></td>
+                        <td><input class="text" placeholder="$"></td>
+                        <td><input class="text" placeholder="$"></td>
+                    </tr>
+                    <tr>
+                        <td>Transportation</td>
+                        <td><input class="text" placeholder="$"></td>
+                        <td><input class="text" placeholder="$"></td>
+                        <td><input class="text" placeholder="$"></td>
+                    </tr>
+                    <tr>
+                        <td>Housing</td>
+                        <td><input class="text" placeholder="$"></td>
+                        <td><input class="text" placeholder="$"></td>
+                        <td><input class="text" placeholder="$"></td>
+
+                    </tr>
+                    <tr>
+                        <td>Utilities</td>
+                        <td><input class="text" placeholder="$"></td>
+                        <td><input class="text" placeholder="$"></td>
+                        <td><input class="text" placeholder="$"></td>
+                    </tr>
+                    <tr>
+                        <td>Child Care</td>
+                        <td><input class="text" placeholder="$"></td>
+                        <td><input class="text" placeholder="$"></td>
+                        <td><input class="text" placeholder="$"></td>
+
+                    </tr>
+                </table>
+            </section>
+        </section>
+    </section>
+</body>
+
+</html>

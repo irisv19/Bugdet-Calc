@@ -1,0 +1,113 @@
+.right {
+    display: flex;
+    width: 80vw;
+    align-items: center;
+}
+
+.displace {
+    display: flex;
+    margin-left: 5px;
+    margin-top: 30px;
+    align-items: flex-end;
+}
+
+.lineUp {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+table,
+td {
+    border: 2px solid black;
+}
+
+.income {
+    display: flex;
+    padding: 5px;
+    background-color: #475C6C;
+    /* justify-content: center; */
+}
+
+.income_section {
+    display: flex;
+    width: 20vw;
+}
+
+.taxes {
+    background-color: #475C6C;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    padding: 3px;
+}
+
+.monthly-income {
+    display: flex;
+    flex-direction: row;
+}
+
+/* .input >text {
+    height: 50%;
+    background-color: #475C6C;
+    color: white;
+    width: 30%;
+    border: none;
+} */
+
+.grossMonthlyCont,
+.grossAnnualCont {
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    flex-wrap: wrap;
+    width: 30vw;
+}
+
+.grossMonthlyCont>input,
+.grossAnnualCont>input {
+    height: 50%;
+    background-color: #475C6C;
+    color: white;
+    width: 30%;
+    border: none;
+}
+
+input::placeholder {
+    color: #ffffff;
+}
+
+.divBy12 {
+    margin-top: -16px;
+}
+
+.monthlyexpenses {
+    background-color: #475C6C;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-around;
+    align-content: space-between;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+/* .td,
+.th {
+    font: white;
+} */
+
+/* .taxes {
+    margin-left: auto;
+    margin-right: auto;
+} */
+
+/* .grossMonthlyCont {
+    margin-left: auto;
+    margin-right: auto;
+} */
