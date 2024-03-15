@@ -2,6 +2,7 @@
     display: flex;
     width: 80vw;
     align-items: center;
+    font: white;
 }
 
 .displace {
@@ -19,7 +20,7 @@
 table,
 td {
     border: 2px solid black;
-    font: white;
+    
 }
 
 .income {
